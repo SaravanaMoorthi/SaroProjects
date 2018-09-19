@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
         mProductSchemeList = new ArrayList<>();
 
+        /*gjkh*/
         bottomSheet = findViewById(R.id.bottomsheet);
         layoutBottomHeader = findViewById(R.id.layoutBottomHeader);
         layoutBottomHeading = findViewById(R.id.layoutBottomHeading);
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+/*fhdgjherg*/
         /*layoutBottomSheet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -157,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
         }
     }
-
+/*ghfiohurhkjh*/
 
     private void getAllProductScheme() {
         mProductSchemeList = productSchemeDbService.getAll(this);
@@ -171,6 +172,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewProductScheme.setAdapter(productSchemeRecyclerAdapter);
     }
 
+    /*gjijlhkjlh*/
+
     private void setTotal() {
         float fl = productSchemeDbService.getTotalApproveAmnt(this);
         Log.e("FloatamountValueis ", "" + fl);
@@ -178,4 +181,6 @@ public class MainActivity extends AppCompatActivity {
        txtViewTotalAmnt.setText(String.valueOf(productSchemeDbService.getTotalApproveAmnt(this)));
        bottomTxtViewTotalAmnt.setText(String.valueOf(productSchemeDbService.getTotalApproveAmnt(this)));
     }
+
+    /*gfhjkrtgjkgrh*/
 }
