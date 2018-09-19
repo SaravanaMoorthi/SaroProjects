@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import circlemenu.com.simpletabview.R;
 import circlemenu.com.simpletabview.model.Category;
 
+/**/
+
 public class CategorySpinnerAdapter extends ArrayAdapter<Category> {
     private AppCompatActivity mActivity;
     private int resLayoutId;
