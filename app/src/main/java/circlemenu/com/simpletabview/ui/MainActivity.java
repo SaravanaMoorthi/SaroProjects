@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewProductScheme = findViewById(R.id.recyclerViewProductScheme);
 
        // layoutBottomSheet = findViewById(R.id.layoutBottomSheet);
+        // layoutBottomSheet = findViewById(R.id.layoutBottomSheet);
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
