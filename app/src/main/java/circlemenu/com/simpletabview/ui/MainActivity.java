@@ -59,8 +59,10 @@ public class MainActivity extends AppCompatActivity {
        // layoutBottomSheet = findViewById(R.id.layoutBottomSheet);
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+
         viewPager.setAdapter(adapter);
 
+        //Db Service Called
         new DbAsyncTask(this).execute();
 
         productSchemeDbService = new ProductSchemeDbService();
