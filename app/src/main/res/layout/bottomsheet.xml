@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomsheet"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="#fff"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="40dp"
+    android:minHeight="300dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutBottomHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="2"
+                android:text="Total Payment"
+                android:textColor="#444"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtViewTotalAmnt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ngfbgfgbfbb"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutBottomHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Scheme Details"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewProductScheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorGrey" />
+
+        <LinearLayout
+            android:id="@+id/layoutBottomFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="2"
+                android:text="Total Payment"
+                android:textColor="#444"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bottomTxtViewTotalAmnt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ngfbgfgbfbb"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

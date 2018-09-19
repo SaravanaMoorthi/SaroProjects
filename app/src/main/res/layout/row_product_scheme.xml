@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cardViewProductScheme"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:clickable="true"
+    android:elevation="5dp"
+    android:focusable="true"
+    app:cardElevation="10dp"
+    android:padding="10dp"
+    android:divider="@android:color/transparent"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Product Name"
+            />
+
+        <TextView
+            android:id="@+id/txtViewProductName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="3dp"
+            android:text="Samsung Category"
+            android:textColor="@color/colorBlack"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Category Name"/>
+
+        <TextView
+            android:id="@+id/txtViewAssetCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="3dp"
+            android:text="Washing Machine"
+            android:textColor="@color/colorBlack"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Product Name"/>
+
+            <TextView
+                android:id="@+id/txtViewScheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="3dp"
+                android:text=""
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Tenor "/>
+
+            <TextView
+                android:id="@+id/txtViewTenor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="10"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="ROI "/>
+
+            <TextView
+                android:id="@+id/txtViewRoi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="10"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:padding="3dp"
+                android:text="Approve Amount "/>
+
+            <TextView
+                android:id="@+id/txtViewApproveAmnt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:padding="3dp"
+                android:text="10000000"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="EMI "/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="10000"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtViewCategoryName"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/common_height"
+                    android:layout_weight="0.4"
+                    android:padding="5dp"
+                    android:text=""
+                    tools:ignore="Suspicious0dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerScheme"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/common_height"
+                    android:layout_weight="0.6"
+                    tools:ignore="Suspicious0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutTenorRoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/common_height"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/editTextTenor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:editable="false"
+                        android:gravity="center"
+                        android:hint="Tenor"
+                        android:inputType="none"
+                        android:text="0" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/common_height"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/editTextRoi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:editable="false"
+                        android:gravity="center"
+                        android:hint="ROI"
+                        android:inputType="none"
+                        android:text="0" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/common_height"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/editTextApproveAmnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="Amount"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/common_height"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/editTextEmi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:editable="false"
+                        android:gravity="center"
+                        android:hint="Emi" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

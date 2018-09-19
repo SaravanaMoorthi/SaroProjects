@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:id="@+id/layoutBottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="2"
+                android:text="Total Payment"
+                android:textColor="#444"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtViewTotalAmnt"
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="₹435.00"></TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
